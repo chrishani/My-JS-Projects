@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> IM </title>
+		<script type="text/javascript">
+			var x = 1;
+			function slide(){
+				var slideElement = document.getElementById("slide");
+				if(x==6){
+					x = 1;
+				}
+				slideElement.src = "image"+x+".jpg";
+				x++;
+				setTimeout("slide()", 1000);
+			}
+
+			onload = slide;
+		</script>
+	</head>
+	<body>
+		<img src="image1.jpg" id="slide" onclick="slide()"/>
+	</body>
+</html>
