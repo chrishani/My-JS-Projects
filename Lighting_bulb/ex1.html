@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> IM JS </title>
+		<script type="text/javascript">
+			var on = false;
+			function onoff(){
+				var bulbElement = document.getElementById("bulb");
+				if(on){
+					bulbElement.src = "pic_bulboff.gif";
+					on = false;
+				}else{
+					bulbElement.src = "pic_bulbon.gif";
+					on = true;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<img src="pic_bulboff.gif" id="bulb" onclick="onoff()"/>
+	</body>
+</html>
