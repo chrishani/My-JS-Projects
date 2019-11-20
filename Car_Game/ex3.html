@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> CI </title>
+		<script type="text/javascript">
+			var x1 = 0;
+			function car1(){
+				var car1Element = document.getElementById("car1");
+				x1 += 20;
+				car1Element.style.marginLeft = x1+"px";
+				if(x1>=1000 && x2<1000){
+					alert("A (Yellow) Won");
+				}
+			}
+			var x2 = 0;
+			function car2(){
+				var car2Element = document.getElementById("car2");
+				x2 += 20;
+				car2Element.style.marginLeft = x2+"px";
+				if(x2>=1000 && x1<1000){
+					alert("B (Red) Won");
+				}
+			}
+		</script>
+		<style type="text/css">
+			body {
+				background-image: url(road.jpg); 
+				background-repeat: repeat-x;
+			}
+		</style>
+	</head>
+	<body >
+		<img src="car1.png" id="car1" width="150" onclick="car1()"/>
+		<br/>
+		<img src="car2.png" id="car2" width="140" onclick="car2()"/>
+	</body>
+</html>
